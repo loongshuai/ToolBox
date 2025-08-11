@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">ToolBox</string>
+        <!-- Tool icon description -->
+        <string name="tool_icon_desc">Tool Icon</string>
+
+        <!-- Placeholder for tool name -->
+        <string name="tool_name_placeholder">Tool Name</string>
+
+        <!-- Image content description -->
+        <string name="image_content_description">Image Content</string>
+
+    <string-array name="currency_array">
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
+
+    <string name="from_currency_prompt">选择源货币</string>
+    <string name="to_currency_prompt">选择目标货币</string>
+    <string name="currency_converter_name">汇率转换</string>
+    <!-- Top Bar -->
+    <string name="menu_icon_description">Menu Icon</string>
+    <string name="currency_converter_title">Currency Converter</string>
+    <string name="refresh_icon_description">Refresh Icon</string>
+    <string name="more_options_icon_description">More Options Icon</string>
+
+    <!-- From Currency Section -->
+    <string name="from_currency_label">From Currency</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="enter_amount">Enter Amount</string>
+
+    <!-- To Currency Section -->
+    <string name="to_currency_label">To Currency</string>
+    <string name="rate_text">Rate: </string>
+    <string name="update_time_text">Last Updated: </string>
+    <string name="app_label">Compass</string>
+    <string name="getting_location">Getting location...</string>
+    <string name="cannot_get_location">Cannot get your location</string>
+    <string name="location_north">%s N</string>
+    <string name="location_south">%s S</string>
+    <string name="location_east">%s E</string>
+    <string name="location_west">%s W</string>
+    <string name="source_language_prompt">Select Source Language</string>
+    <string name="target_language_prompt">Select Target Language</string>
+        <string name="select_timezone">选择时区</string>
+    <string name="input_format">输入格式：yyyy-MM-dd HH:mm:ss</string>
+    <string-array name="conversion_formats">
+        <item>PDF</item>
+        <item>PNG</item>
+        <item>JPG</item>
+        <item>GIF</item>
+        <item>SVG</item>
+    </string-array>
+</resources>

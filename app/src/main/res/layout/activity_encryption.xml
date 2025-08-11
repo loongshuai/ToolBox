@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 水平排列的RadioButton -->
+    <RadioGroup
+        android:id="@+id/rg_encryption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/rb_base64"
+            android:text="Base64"
+            android:checked="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb_aes"
+            android:text="AES"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb_des"
+            android:text="DES"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb_md5"
+            android:text="MD5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center" />
+    </RadioGroup>
+
+    <!-- 输入框 -->
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入文本"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 加密/解密按钮 -->
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_encrypt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="加密"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btn_decrypt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="解密"
+            android:visibility="gone"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <!-- 可复制的加密结果 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textIsSelectable="true"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:minHeight="48dp"/>
+
+        <Button
+            android:id="@+id/btn_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="复制"
+            android:textColor="#888"
+            android:padding="8dp"
+            android:background="@android:color/transparent"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

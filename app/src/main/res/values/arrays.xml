@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="output_formats">
+        <item>PNG</item>
+        <item>SVG</item>
+        <item>GIF</item>
+        <item>PDF</item>
+        <item>JPEG</item>
+    </string-array>
+</resources>

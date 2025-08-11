@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 使用 ConstraintLayout 来布局 TextView 和 Button -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="扫描结果将显示在这里"
+            android:textSize="18sp"
+            android:textIsSelectable="true"
+            android:padding="16dp"
+            android:background="#FFF"
+            android:lineSpacingExtra="4dp"
+            android:minHeight="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_copy"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Button
+            android:id="@+id/btn_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="复制"
+            android:textColor="#888"
+            android:padding="8dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toEndOf="@id/tv_result"
+            app:layout_constraintTop_toTopOf="@id/tv_result"
+            app:layout_constraintBottom_toBottomOf="@id/tv_result"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

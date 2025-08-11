@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择你想要转为的图片格式"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerFormat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageButton
+        android:id="@+id/btnImageConvert"
+        android:layout_width="152dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center_horizontal"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:src="@drawable/ic_picture"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/imageFormatTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text="图片格式："
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnConfirmConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="确认转换"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="选择图片进行转换"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_background">
+
+    <!-- 标题栏 -->
+    <LinearLayout
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/primary_blue"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="程序员计算器"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 结果显示区 -->
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/edittext_background"
+        android:focusable="false"
+        android:gravity="end|center_vertical"
+        android:imeOptions="actionDone"
+        android:padding="16dp"
+        android:textColor="@color/dark_text"
+        android:textSize="42sp" />
+
+    <!-- 按钮网格布局 -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:rowCount="8"
+        android:padding="8dp"
+        android:background="@color/grid_background">
+
+        <!-- 第一行 -->
+        <Button
+            android:id="@+id/cls"
+            style="@style/CalcButton.Equal"
+            android:text="C"/>
+
+        <Button
+            android:id="@+id/m1"
+            style="@style/CalcButton.Operator"
+            android:text="m1"/>
+
+        <Button
+            android:id="@+id/m2"
+            style="@style/CalcButton.Operator"
+            android:text="m2"/>
+
+        <Button
+            android:id="@+id/Backspace"
+            style="@style/CalcButton.Equal"
+            android:text="⌫"/>
+
+        <!-- 第二行 -->
+        <Button
+            android:id="@+id/bin"
+            style="@style/CalcButton.Operator"
+            android:textSize="18dp"
+            android:text="Bin"/>
+        <Button
+            android:id="@+id/seven"
+            style="@style/CalcButton.Number"
+            android:text="7"/>
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/CalcButton.Number"
+            android:text="8"/>
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/CalcButton.Number"
+            android:text="9"/>
+
+
+
+
+        <!-- 第三行 -->
+        <Button
+            android:id="@+id/oct"
+            style="@style/CalcButton.Operator"
+            android:textSize="18dp"
+            android:text="Oct"/>
+        <Button
+            android:id="@+id/four"
+            style="@style/CalcButton.Number"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/five"
+            style="@style/CalcButton.Number"
+            android:text="5"/>
+
+        <Button
+            android:id="@+id/six"
+            style="@style/CalcButton.Number"
+            android:text="6"/>
+
+
+
+        <!-- 第四行 -->
+        <Button
+            android:id="@+id/dec"
+            style="@style/CalcButton.Operator"
+            android:textSize="18dp"
+            android:text="Dec"/>
+        <Button
+            android:id="@+id/one"
+            style="@style/CalcButton.Number"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/two"
+            style="@style/CalcButton.Number"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/three"
+            style="@style/CalcButton.Number"
+            android:text="3"/>
+
+
+
+        <!-- 第五行 -->
+        <Button
+            android:id="@+id/hex"
+            style="@style/CalcButton.Operator"
+            android:textSize="18dp"
+            android:text="Hex"/>
+        <Button
+            android:id="@+id/zero"
+            style="@style/CalcButton.Number"
+            android:text="0"/>
+
+        <Button
+            android:id="@+id/zero2"
+            style="@style/CalcButton.Number"
+            android:text="00"/>
+        <Button
+            android:id="@+id/equal"
+            style="@style/CalcButton.Equal"
+            android:text="="/>
+
+
+        <Button
+            android:id="@+id/md5"
+            style="@style/CalcButton.Operator"
+            android:textSize="18dp"
+            android:text="MD5"/>
+
+        <Button
+            android:id="@+id/sha1"
+            style="@style/CalcButton.Operator"
+            android:textSize="18dp"
+            android:text="sha-1"/>
+        <Button
+            android:id="@+id/sha256"
+            style="@style/CalcButton.Operator"
+            android:textSize="18dp"
+            android:text="SHA-256"/>
+        <Button
+            android:id="@+id/danwei"
+            style="@style/CalcButton.Operator"
+            android:textSize="16dp"
+            android:text="÷1028"/>
+
+    </GridLayout>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/note_title_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/note_content_edit"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_below="@id/note_title_edit"
+        android:layout_marginTop="16dp"
+        android:gravity="top"
+        android:hint="Content"
+        android:inputType="textMultiLine"
+        android:maxLines="1000"
+        android:overScrollMode="always"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/note_date_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_content_edit"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:textColor="#888" />
+
+    <TextView
+        android:id="@+id/reminder_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_date_edit"
+        android:layout_marginTop="16dp"
+        android:text="提醒时间" />
+
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/reminder_text_view"
+        android:layout_marginTop="3dp"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/photo_image_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="223dp"
+        android:layout_marginBottom="22dp"
+        android:text="添加图片"
+        app:cornerRadius="8dp"
+        app:strokeWidth="0dp"
+        app:backgroundTint="@color/primaryColor"
+        android:textColor="@android:color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_note_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo_image_view"
+        android:layout_marginTop="3dp"
+        android:text="保存"
+        app:cornerRadius="8dp"
+        app:strokeWidth="0dp"
+        app:backgroundTint="@color/primaryColor"
+        android:textColor="@android:color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/delete_note_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo_image_view"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@id/save_note_button"
+        android:text="删除"
+        app:cornerRadius="8dp"
+        app:strokeWidth="0dp"
+        app:backgroundTint="@color/secondaryColor"
+        android:textColor="@android:color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_reminder_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo_image_view"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@id/delete_note_button"
+        android:text="添加提醒"
+        app:cornerRadius="8dp"
+        app:strokeWidth="0dp"
+        app:backgroundTint="@color/primaryColor"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

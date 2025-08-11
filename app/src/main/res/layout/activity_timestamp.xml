@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 时区选择 -->
+    <Spinner
+        android:id="@+id/spinner_time_zones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/select_timezone" />
+
+    <!-- 日期时间输入 -->
+    <EditText
+        android:id="@+id/et_date_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_format"
+        android:inputType="text"/>
+
+    <!-- 生成按钮 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成时间戳"/>
+
+    <!-- 显示结果 -->
+    <TextView
+        android:id="@+id/tv_result_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textIsSelectable="true"
+        android:background="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_result_iso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textIsSelectable="true"
+        android:background="@android:color/white"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_result_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textIsSelectable="true"
+        android:background="@android:color/white"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_result_13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textIsSelectable="true"
+        android:background="@android:color/white"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#666"/>
+</LinearLayout>

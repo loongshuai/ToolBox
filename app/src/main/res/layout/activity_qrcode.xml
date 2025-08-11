@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入文本内容"/>
+
+    <Button
+        android:id="@+id/generate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成二维码"/>
+
+    <ImageView
+        android:id="@+id/qr_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_to_album_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存到相册"
+        android:visibility="gone"
+        app:backgroundTint="@color/primaryColor"
+        app:cornerRadius="20dp"
+        app:strokeWidth="0dp" />
+</LinearLayout>
